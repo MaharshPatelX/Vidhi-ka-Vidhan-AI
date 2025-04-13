@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Your Natal Chart | Vidhi ka Vidhan AI{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="chart-section">
+        <h1>Your Natal Chart</h1>
+        
+        <div class="chart-container" id="chart-container" style="display: none;">
+            <!-- Chart SVG will be inserted here via JavaScript -->
+        </div>
+        
+        <div class="chart-info" id="chart-info">
+            <h2>No chart generated yet</h2>
+            <p>Please <a href="/#chart-form">enter your birth details</a> to generate your natal chart.</p>
+        </div>
+    </section>
+    
+    <section class="form-container" id="chart-form" style="margin-top: 50px;">
+        <h2>Generate Another Chart</h2>
+        <form id="birth-chart-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="birth-date">Date of Birth</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="birth-time">Time of Birth (if known)</label>
+                <input type="time" id="birth-time" name="birth-time" placeholder="Optional but recommended">
+            </div>
+            
+            <div class="form-group">
+                <label for="birth-location">Place of Birth</label>
+                <input type="text" id="birth-location" name="birth-location" required placeholder="City, Country">
+            </div>
+            
+            <button type="submit">Generate Chart</button>
+        </form>
+    </section>
+
+    <!-- ===== START: Added Chat Section ===== -->
+    <section class="consultation-section" style="margin-top: 50px;">
+        <h2>Ask About Your Chart</h2>
+        <div class="consultation-container">
+            <!-- Removed chart summary div here -->
+            <div>
+                <div class="chat-history" id="chat-history">
+                    <div class="message system-message">
+                        <p>Welcome! Ask me anything about your generated chart (e.g., "Tell me about my Sun sign", "What are potential strengths based on this chart?").</p>
+                    </div>
+                </div>
+                
+                <form id="consultation-form" class="question-form">
+                    <input type="text" id="question" placeholder="Type your question here..." required>
+                    <button type="submit">Ask</button>
+                    <button type="button" id="clear-chat-button" class="secondary-button" style="margin-left: 10px;">Clear Chat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END: Added Chat Section ===== -->
+
+</div>
+
+<section class="chart-explanation" style="background-color: rgba(0, 0, 0, 0.3); padding: 80px 0; margin-top: 50px;">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Understanding Your Birth Chart</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div>
+                <h3>Sun Sign</h3>
+                <p>The sun determines your ego, identity, and "role" in life. It's the core of who you are, and is the sign you would most likely already know.</p>
+            </div>
+            
+            <div>
+                <h3>Moon Sign</h3>
+                <p>The moon represents your emotional inner world. It determines how you process feelings and your unconscious reactions.</p>
+            </div>
+            
+            <div>
+                <h3>Rising Sign (Ascendant)</h3>
+                <p>Your ascendant is how you present yourself to the world, the "mask" you wear, and your immediate reactions to new situations.</p>
+            </div>
+            
+            <div>
+                <h3>Planetary Positions</h3>
+                <p>Each planet rules different aspects of your personality and life areas. Their placement in signs and houses shapes their influence.</p>
+            </div>
+            
+            <div>
+                <h3>Aspects</h3>
+                <p>Aspects are the angles planets make to each other, creating harmony or tension that influences how their energies interact in your chart.</p>
+            </div>
+            
+            <div>
+                <h3>Houses</h3>
+                <p>The 12 houses represent different areas of life, from identity and resources to communication, home, creativity, relationships, and more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

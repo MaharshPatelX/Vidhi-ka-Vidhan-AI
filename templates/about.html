@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}What is This | Vidhi ka Vidhan AI{% endblock %}
+
+{% block content %}
+<section style="padding: 80px 0;">
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 40px;">What is This</h1>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; margin-bottom: 80px;">
+                <div>
+                    <svg viewBox="0 0 200 200" style="width: 120px; height: 120px; margin: 0 auto 30px; display: block;" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" fill="none" stroke="#fff" stroke-width="2" />
+                    </svg>
+                    <h2 style="text-align: center; margin-bottom: 20px;">Access to astrology for everyone</h2>
+                    <p>Access to astrology this accurate has historically been restricted to those with access to personal astrologers—now these predictions can be anyone's.</p>
+                </div>
+                
+                <div>
+                    <svg viewBox="0 0 200 200" style="width: 120px; height: 120px; margin: 0 auto 30px; display: block;" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100,50 L120,90 L165,95 L135,125 L140,170 L100,150 L60,170 L65,125 L35,95 L80,90 Z" fill="none" stroke="#fff" stroke-width="2" />
+                    </svg>
+                    <h2 style="text-align: center; margin-bottom: 20px;">Powered by AI</h2>
+                    <p>Our powerful natural-language engine uses NASA data, coupled with the methods of professional astrologers, to algorithmically generate insights about who you are and how you relate to others.</p>
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 60px;">
+                <h2>The Technology Behind It</h2>
+                <p style="margin-bottom: 20px;">This application combines several cutting-edge technologies to provide accurate astrological readings:</p>
+                
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                        <svg viewBox="0 0 20 20" style="width: 15px; height: 15px; position: absolute; left: 0; top: 5px;" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" fill="#fff" />
+                        </svg>
+                        <strong>NASA Ephemeris Data:</strong> We use precise planetary position calculations based on NASA's ephemeris data.
+                    </li>
+                    <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                        <svg viewBox="0 0 20 20" style="width: 15px; height: 15px; position: absolute; left: 0; top: 5px;" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" fill="#fff" />
+                        </svg>
+                        <strong>Advanced AI Models:</strong> Our system utilizes a state-of-the-art language model that has been trained on astrological texts and interpretations.
+                    </li>
+                    <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                        <svg viewBox="0 0 20 20" style="width: 15px; height: 15px; position: absolute; left: 0; top: 5px;" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" fill="#fff" />
+                        </svg>
+                        <strong>Real-time Web Search:</strong> The AI supplements its knowledge by searching for the latest astrological information relevant to your query.
+                    </li>
+                    <li style="padding-left: 25px; position: relative;">
+                        <svg viewBox="0 0 20 20" style="width: 15px; height: 15px; position: absolute; left: 0; top: 5px;" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" fill="#fff" />
+                        </svg>
+                        <strong>Conversation Memory:</strong> The system remembers your previous questions to provide a cohesive and personalized consultation experience.
+                    </li>
+                </ul>
+            </div>
+            
+            <div style="margin-bottom: 60px;">
+                <h2>How to Use It</h2>
+                <p style="margin-bottom: 20px;">Getting started with Vidhi ka Vidhan AI is simple:</p>
+                
+                <ol style="padding-left: 25px;">
+                    <li style="margin-bottom: 15px;"><strong>Enter your birth details</strong> - Provide your name, date of birth, time of birth (if known), and place of birth.</li>
+                    <li style="margin-bottom: 15px;"><strong>Generate your natal chart</strong> - Our system will calculate your personal astrological chart based on the planetary positions at your birth moment.</li>
+                    <li style="margin-bottom: 15px;"><strong>Review your chart</strong> - Explore your sun, moon, rising sign, and the positions of other planets in your chart.</li>
+                    <li><strong>Start the consultation</strong> - Ask specific questions about your life, future, relationships, career, or any area you'd like insights about.</li>
+                </ol>
+            </div>
+            
+            <div>
+                <h2>A Note on Interpretation</h2>
+                <p style="margin-bottom: 20px;">While our AI provides insights based on astrological principles, remember that astrology is an interpretive art. The information provided should be considered as one perspective to complement your own intuition and judgment.</p>
+                
+                <p>Astrology puts our temporary bodies in context with our universe's vastness, allowing irrationality to invade our techno-rationalist ways of living.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: rgba(0, 0, 0, 0.3); padding: 80px 0;">
+    <div class="container" style="text-align: center;">
+        <h2 style="margin-bottom: 30px;">Ready to explore your cosmic blueprint?</h2>
+        <a href="/#chart-form" class="button">Generate Your Birth Chart</a>
+    </div>
+</section>
+{% endblock %} 

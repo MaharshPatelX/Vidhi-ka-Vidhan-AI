@@ -1,0 +1,302 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0e0e0e;
+    --text-color: #ffffff;
+    --accent-color: #4d4d4d;
+    --border-color: #333333;
+    --hover-color: #444444;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Georgia', serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    padding: 40px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Chart Display */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.chart-wheel {
+    width: 100%;
+    height: auto;
+}
+
+.chart-info {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.chart-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.info-text {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Consultation Section */
+.consultation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px 20px;
+}
+
+.chat-history {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.user-message {
+    background-color: rgba(100, 100, 100, 0.2);
+    margin-left: 50px;
+}
+
+.astrologer-message {
+    background-color: rgba(50, 50, 50, 0.4);
+    margin-right: 50px;
+}
+
+.question-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.question-form input {
+    flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .consultation-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-info {
+        position: static;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 40px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+/* Dark scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
+} 
