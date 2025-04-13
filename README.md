@@ -1,8 +1,8 @@
-# Co-Star: AI-Powered Astrology Consultation
+# Vidhi ka Vidhan AI: AI-Powered Astrology Consultation
 
 An AI-powered astrology consultation web application built with Flask and modern AI technologies.
 
-![Co-Star Screenshot](static/images/placeholder.svg)
+![Vidhi ka Vidhan AI Screenshot](static/images/placeholder.svg)
 
 ## Features
 
