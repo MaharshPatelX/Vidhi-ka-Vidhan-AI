@@ -2,7 +2,8 @@
 
 An AI-powered astrology consultation web application built with Flask and modern AI technologies.
 
-![Vidhi ka Vidhan AI Image](media/img.png)
+[![Vidhi ka Vidhan AI Image](media/img.png)](https://www.loom.com/share/9b7281b15c9248da9e6065183268dc3c)
+<!-- ![Vidhi ka Vidhan AI Image](media/demo.mp4) -->
 
 ## Features
 
